@@ -18,7 +18,7 @@
             <div class="right">
                 <img src="./payoo-resources/assets/logo.png" alt="">
                 <div class="blance">
-                    <h2>$ <span>45000</span></h2>
+                    <h2>$ <span id="blance">45000</span></h2>
                     <p>Available Balance</p>
                 </div>
             </div>
@@ -98,27 +98,29 @@
                 <!-- number -->
                 <h4 id="j">Select Bank</h4>
                 <select name="" id="number">
-                    <option value="">DBBL</option>
-                    <option value="">South East Bank</option>
-                    <option value="">Brack Bank</option>
-                    <option value="">AB Bank</option>
-                    <option value="">Sonali Bank</option>
+                    <option value="Select a Bank">Select a Bank</option>
+                    <option value="DBBL">DBBL</option>
+                    <option value="Soutn East Bank">South East Bank</option>
+                    <option value="Brack Bank">Brack Bank</option>
+                    <option value="AB Bank">AB Bank</option>
+                    <option value="Sonali Bank">Sonali Bank</option>
                 </select>
 
                 <!-- pin -->
                 <h4>Bank Account Number</h4>
-                <input type="text" id="pin" maxlength="11" placeholder="Enter 11 Digit AC Number">
+                <input type="text" id="pin" class="acc" maxlength="11" placeholder="Enter 11 Digit AC Number">
                 <br>
                 <h4 id="i">Ammount To Add</h4>
-                <input type="text" id="pin" maxlength="5" placeholder="Ammout to add">
+                <input type="text" id="pin" class="amount" maxlength="5" placeholder="Ammout to add">
                 <br>
                 <h4 id="i">4 Digit Pin</h4>
-                <input type="password" id="pin" maxlength="4" placeholder="Please enter 4 Digit Pin">
+                <input type="password" id="pin" class="pin" maxlength="4" placeholder="Please enter 4 Digit Pin">
                 <br>
-                <button class="btn" type="buttone">Login</button>
+                <button class="btn" type="buttone">Add Money</button>
             </div>
        </section>
          
     </div>
+    <script src="add-mony.js"></script>
 </body>
 </html>

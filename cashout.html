@@ -18,12 +18,12 @@
             <div class="right">
                 <img src="./payoo-resources/assets/logo.png" alt="">
                 <div class="blance">
-                    <h2>$ <span>45000</span></h2>
+                    <h2>$ <span class="a-blance">45000</span></h2>
                     <p>Available Balance</p>
                 </div>
             </div>
             <div class="left">
-                <button class="btn">
+                <button class="button">
                     <i class="ri-logout-box-r-line"></i>Log Out
                 </button>
             </div>
@@ -90,17 +90,18 @@
 
                 <!-- pin -->
                 <h4>Agent Account Number</h4>
-                <input type="text" id="pin" maxlength="11" placeholder="Enter 11 Digit AC Number">
+                <input type="text" id="pin" class="agent" maxlength="11" placeholder="Enter 11 Digit AC Number">
                 <br>
                 <h4 id="i">Ammount</h4>
-                <input type="text" id="pin" maxlength="5" placeholder="Enter Ammout to Withdrow">
+                <input type="text" id="pin" class="ammount" maxlength="5" placeholder="Enter Ammout to Withdrow">
                 <br>
                 <h4 id="i">4 Digit Pin</h4>
-                <input type="password" id="pin" maxlength="4" placeholder="Please enter 4 Digit Pin">
+                <input type="password" id="pin" class="pin" maxlength="4" placeholder="Please enter 4 Digit Pin">
                 <br>
-                <button class="btn" type="buttone">Login</button>
+                <button class="btn" id="cashout" type="buttone">Cash Out</button>
             </div>
         </section>
     </div>
+    <script src="cashout.js"></script>
 </body>
 </html>

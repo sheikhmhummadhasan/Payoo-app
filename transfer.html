@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home|Page</title>
+    <title>Transfer Money|Page</title>
     <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="./payoo-resources/assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -18,7 +18,7 @@
             <div class="right">
                 <img src="./payoo-resources/assets/logo.png" alt="">
                 <div class="blance">
-                    <h2>$ <span>45000</span></h2>
+                    <h2>$ <span id="Cblance">45000</span></h2>
                     <p>Available Balance</p>
                 </div>
             </div>
@@ -98,17 +98,18 @@
 
                 <!-- pin -->
                 <h4>User Account Number</h4>
-                <input type="text" id="pin" maxlength="11" placeholder="Enter 11 Digit AC Number">
+                <input type="text" id="pin" class="number" maxlength="11" placeholder="Enter 11 Digit AC Number">
                 <br>
                 <h4 id="i">Ammount</h4>
-                <input type="text" id="pin" maxlength="5" placeholder="Enter Ammout to Withdrow">
+                <input type="text" id="pin" class="amount" maxlength="5" placeholder="Enter Ammout to Withdrow">
                 <br>
                 <h4 id="i">4 Digit Pin</h4>
-                <input type="password" id="pin" maxlength="4" placeholder="Please enter 4 Digit Pin">
+                <input type="password" id="pin" class="pin" maxlength="4" placeholder="Please enter 4 Digit Pin">
                 <br>
-                <button class="btn" type="buttone">Login</button>
+                <button class="btn" type="buttone">Transfer Money</button>
             </div>
         </section>
     </div>
+    <script src="transfer.js"></script>
 </body>
 </html>
