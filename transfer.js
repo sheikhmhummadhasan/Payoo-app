@@ -37,5 +37,15 @@ trnbtn.addEventListener("click",() =>{
     // show right now blance after calclute
     getcurrentblance.innerText = trs;
     alert("Transfer Succcessful")
+    
+    // get current time at this time
+    let today = new Date()
+    let date = today.toLocaleDateString()
+    let time = today.toLocaleTimeString()
 
+    let appendmsg = document.querySelector(".his");
+    let creatpra = document.createElement("p");
+    creatpra.style.marginBottom = "15px"
+    creatpra.innerHTML=`Transfer Money Tk ${amount} to ${user} successful. Fee Tk 1.49. Balance $ ${trs}. TrxID ${Math.floor(10000 + Math.random() * 9999999)} at ${date} in ${time}. successfully`
+    appendmsg.prepend(creatpra)
 })

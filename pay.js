@@ -48,4 +48,15 @@ addbtn.addEventListener("click",()=>{
     }
     // finaly add new blance
     getcurrentblance.innerText=(Number(addA))
+
+    // get current time at this time
+    let today = new Date()
+    let date = today.toLocaleDateString()
+    let time = today.toLocaleTimeString()
+
+    let appendmsg = document.querySelector(".his");
+    let creatpra = document.createElement("p");
+    creatpra.style.marginBottom = "15px"
+    creatpra.innerHTML=`Pay Bill $ ${amount} to ${bank} ${accountnumber} successful. Fee Tk 1.49. Balance $ ${addA}. TrxID ${Math.floor(10000 + Math.random() * 9999999)} at ${date} in ${time}. successfully`
+    appendmsg.prepend(creatpra)
 })

@@ -48,5 +48,17 @@ addbtn.addEventListener("click",()=>{
     // }
 
     // finaly add new blance
+    alert("Add Mony is Successfull")
     getcurrentblance.innerText=(Number(addA))
+
+    // get current time at this time
+    let today = new Date()
+    let date = today.toLocaleDateString()
+    let time = today.toLocaleTimeString()
+
+    let appendmsg = document.querySelector(".his");
+    let creatpra = document.createElement("p");
+    creatpra.style.marginBottom = "15px"
+    creatpra.innerHTML= `You have received $${amount} from ${bank} ${accountnumber}. Fee Tk 0.00. Balance ${addA}. TrxID ${Math.floor(10000 + Math.random() * 9999999)} at ${date} in ${time}`
+    appendmsg.prepend(creatpra)
 })

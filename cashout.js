@@ -3,6 +3,7 @@ let cashoutbtn = document.querySelector("#cashout")
 cashoutbtn.addEventListener("click",() => {
     // get agent numb
     let getagnumb = document.querySelector(".agent");
+    let agentnum = getagnumb.value;
 
     // get ammount
     let getamnt = document.querySelector(".ammount");
@@ -29,6 +30,17 @@ cashoutbtn.addEventListener("click",() => {
         alert("Successfull trx")
     }else{
         alert("Wrong Number or Pin")
-        return;
+        // return;
     }
+
+     // get current time at this time
+    let today = new Date()
+    let date = today.toLocaleDateString()
+    let time = today.toLocaleTimeString()
+
+    let appendmsg = document.querySelector(".his");
+    let creatpra = document.createElement("p");
+    creatpra.style.marginBottom = "15px"
+    creatpra.innerHTML=`Cash Out Tk ${amntconv} to ${agentnum} successful. Fee Tk 1.49. Balance $ ${cal}. TrxID ${Math.floor(10000 + Math.random() * 9999999)} at ${date} in ${time}. Cash Out from 2 Priyo Agents at 1.49%`
+    appendmsg.prepend(creatpra)
 })
